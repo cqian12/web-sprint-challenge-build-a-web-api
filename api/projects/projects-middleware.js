@@ -19,18 +19,6 @@ function validateProjectId (req, res, next) {
         }
     })
     .catch(err => res.status(500).json({message:"problem finding project"}))
-    // try {
-    //     const project = Projects.get(id)
-    //     if (!project) {
-    //         res.status(404).json({message:"project not found"})
-    //     } else {
-    //         req.project = project
-    //         next()
-    //     }
-    // }
-    // catch(err) {
-    //     res.status(500).json({message:"problem finding project"})   
-    // }
 }
 
 function validateProject (req, res, next) {
